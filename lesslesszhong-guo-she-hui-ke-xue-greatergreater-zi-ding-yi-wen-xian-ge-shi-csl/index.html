@@ -39,29 +39,9 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            This is LiuWenchao's blog.
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
+          <div class="toc-container hidden lg:block">
             
           </div>
         </div>
@@ -100,13 +80,94 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="text-lg text-gray-700 mb-8">
-          <i class="ri-bookmark-2-line"></i> 标签云
-        </h2>
-        <div class="tags-container">
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">《中国社会科学》自定义文献格式CSL</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2020-05-01 / 2 min read
+        </div>
+        
+        <div class="post-content yue">
+          <p>因为学位论文引用文献要求参照《中国社会科学》杂志的”引文注释规范“，所以从网上检索了一下有没有相关的资源。主要有以下资源：</p>
+<p><a href="https://zhuanlan.zhihu.com/p/58516953">方凡反饭制作的《历史研究》《中国社会科学》的CSL</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/111316221">Free粥对上面进行了修改，制作了《世界经济与政治》的CSL</a></p>
+<p>附上<br>
+<a href="http://blog.pulipuli.info/2014/08/zoteroapa-zotero-citation-style-apa.html">布丁布丁吃什么制作的中英文APA</a></p>
+<p><a href="http://www.cssn.cn/qt/wytg/wytg_zgshkx/201312/W020131223519233751610.doc">《&lt;中国社会科学&gt;关于引文注释的规定》</a></p>
+<p><strong>在使用过程中，总结了几点注意事项：</strong></p>
+<ul>
+<li>一定要将zotero中的英文文献的语言修改为en-US（参考布丁布丁吃什么那篇），否则英文文献仍然会当成中文文献。<strong>这是最重要的一条注意事项</strong><br>
+<img src="https://liuwench.github.io/post-images/1588325352676.png" alt="" loading="lazy"></li>
+<li>在其他人的使用过程中又发现一条决定性的设置，即在word中设置引文样式时，语言一定要选择“中文（中国大陆）”。<strong>这也是非常重要的一条注意事项</strong></li>
+<li>虽然我对英文文献进行了首字母大写的设置，但是英文标题好像没有效果。针对这一问题，可以在zotero中设置，选中文献，在信息中选中标题，右键选择“标题大写”。</li>
+<li>英文作者直接仍然是以、连结，我不知道怎么修改，《中国社会科学》的引文规范是and连结，所以就最后在word中手动修改吧。</li>
+<li>一般zotero抓取不到英文文献的月份和出版地，自己在zotero中补上就行了。</li>
+</ul>
+<hr>
+<p>. <center><strong>不是迫不得已，当然用方便的APA啦！</strong></center>.</p>
+<hr>
+<p>我在使用过程中对方凡反饭制作的CSL做了小修补，好像也不怎么重要，我没有侵犯人家工作的意思，只是在使用过程中为了自己的使用方便。可以看到各种背景信息都是没有改的。向上面两位朋友表达感谢！</p>
+<p><a href="https://editor.citationstyles.org/about/">修改CSL的可视化网站</a><br>
+现在的CSL肯定还有很多问题，各位有缘看到的朋友自行修改吧。</p>
+<p>我现在所使用的版本 <strong>（仍然是方凡反饭的CSL，再次感谢！）</strong><br>
+链接: https://pan.baidu.com/s/14r4f-Wa8NLlMk0fSfGaQXQ 提取码: zuue</p>
+
+        </div>
+
+        
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://liuwench.github.io/ru-he-yong-zotero-zhua-qu-zhong-wen-tu-shu/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  如何用zotero抓取中文图书？
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://liuwench.github.io/xin-nian-kuai-le/">
+                <h3 class="post-title">
+                  新年快乐！
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
           
         </div>
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'efa68fd1255cfe3c405f',
+    clientSecret: '2c633ff66ba46daa6466f5ac8bfad6438291bb68',
+    repo: 'liuwench.github.io',
+    owner: 'Liuwench',
+    admin: ['Liuwench'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
       </div>
     </div>
 

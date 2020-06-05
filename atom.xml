@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liuwench.github.io</id>
     <title>刘文超</title>
-    <updated>2020-06-05T12:28:55.248Z</updated>
+    <updated>2020-06-05T12:33:42.454Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liuwench.github.io"/>
     <link rel="self" href="https://liuwench.github.io/atom.xml"/>
@@ -12,29 +12,29 @@
     <rights>All rights reserved 2020, 刘文超</rights>
     <entry>
         <title type="html"><![CDATA[小韩总的《台湾游记》]]></title>
-        <id>https://liuwench.github.io/post/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/</id>
-        <link href="https://liuwench.github.io/post/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/">
+        <id>https://liuwench.github.io/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/</id>
+        <link href="https://liuwench.github.io/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/">
         </link>
         <updated>2020-06-05T12:08:03.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[如何用zotero抓取中文图书？]]></title>
-        <id>https://liuwench.github.io/post/ru-he-yong-zotero-zhua-qu-zhong-wen-tu-shu/</id>
-        <link href="https://liuwench.github.io/post/ru-he-yong-zotero-zhua-qu-zhong-wen-tu-shu/">
+        <id>https://liuwench.github.io/ru-he-yong-zotero-zhua-qu-zhong-wen-tu-shu/</id>
+        <link href="https://liuwench.github.io/ru-he-yong-zotero-zhua-qu-zhong-wen-tu-shu/">
         </link>
         <updated>2020-05-10T08:39:42.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[《中国社会科学》自定义文献格式CSL]]></title>
-        <id>https://liuwench.github.io/post/lesslesszhong-guo-she-hui-ke-xue-greatergreater-zi-ding-yi-wen-xian-ge-shi-csl/</id>
-        <link href="https://liuwench.github.io/post/lesslesszhong-guo-she-hui-ke-xue-greatergreater-zi-ding-yi-wen-xian-ge-shi-csl/">
+        <id>https://liuwench.github.io/lesslesszhong-guo-she-hui-ke-xue-greatergreater-zi-ding-yi-wen-xian-ge-shi-csl/</id>
+        <link href="https://liuwench.github.io/lesslesszhong-guo-she-hui-ke-xue-greatergreater-zi-ding-yi-wen-xian-ge-shi-csl/">
         </link>
         <updated>2020-05-01T09:00:48.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[新年快乐！]]></title>
-        <id>https://liuwench.github.io/post/xin-nian-kuai-le/</id>
-        <link href="https://liuwench.github.io/post/xin-nian-kuai-le/">
+        <id>https://liuwench.github.io/xin-nian-kuai-le/</id>
+        <link href="https://liuwench.github.io/xin-nian-kuai-le/">
         </link>
         <updated>2019-12-31T16:23:34.000Z</updated>
     </entry>
