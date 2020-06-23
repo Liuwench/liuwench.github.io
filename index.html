@@ -1,278 +1,1088 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>刘文超</title>
-<meta name="description" content="This is LiuWenchao's blog." />
-<link rel="shortcut icon" href="https://liuwench.github.io/favicon.ico?v=1591361845624">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-<link rel="stylesheet" href="https://liuwench.github.io/styles/main.css">
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="This is LiuWenchao&#39;s blog.">
+<meta name="theme-color" content="#000">
+<title>LiuWenchao</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1592892049434">
+<link rel="stylesheet" href="/media/css/pisces.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155231736-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-155231736-1');
-</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
 
 
-  </head>
-  <body>
-    <div class="main px-4 flex flex-col lg:flex-row">
-      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
-  <div class="lg:sticky top-0">
-    <div class="sidebar-content">
-      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
-        <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
-        <a href="https://liuwench.github.io">
-          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://liuwench.github.io/images/avatar.png?v=1591361845624" alt="">
-        </a>
-        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">刘文超</h1>
-      </div>
-      
-        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
-          <p class="my-4 text-gray-600 font-light hidden lg:block">
-            This is LiuWenchao's blog.
-          </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-          </div>
+
+
+
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="pisces">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
         </div>
-      
-    </div>
-  </div>
-</div>
-
-<div class="menu-container">
-  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
-  <div>
-    
-      
-        <a href="/" class="menu" style="animation-delay: 0s">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu" style="animation-delay: 0.2s">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu" style="animation-delay: 0.4s">
-          标签
-        </a>
-      
-    
-  </div>
-  <div class="site-footer">
-    <div class="py-4 text-gray-700"></div>
-    <a class="rss" href="https://liuwench.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-<div class="mask" onclick="closeMenu()">
-</div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="latest-article text-lg text-gray-700 mb-8">
-          <i class="ri-article-line"></i>
-          最新文章
-        </h2>
-        
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
-    
-      <a href="https://liuwench.github.io/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://liuwench.github.io/post-images/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://liuwench.github.io/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">小韩总的《台湾游记》</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
       </div>
-      <div class="text-gray-400 text-sm font-light">2020-06-05 / 10 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${1 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://liuwench.github.io/ru-he-yong-zotero-zhua-qu-zhong-wen-tu-shu/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">如何用zotero抓取中文图书？</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-05-10 / 2 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${2 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://liuwench.github.io/lesslesszhong-guo-she-hui-ke-xue-greatergreater-zi-ding-yi-wen-xian-ge-shi-csl/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">《中国社会科学》自定义文献格式CSL</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-05-01 / 2 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${3 * 0.2}s` }">
-    
-    <div class="content">
-      <a href="https://liuwench.github.io/xin-nian-kuai-le/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">新年快乐！</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-01-01 / 0 min read</div>
-    </div>
-  </section>
-
-        <div class="read-more">
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>LiuWenchao</span>
+            </a>  
           
         </div>
-        <div class="index-page">
-          <div class="pagination-container animated fadeIn">
-  
-  
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item nav-item-active">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友情链接
+                  
+                </a>
+              </li>
+            
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
 </div>
 
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout pisces ">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">刘文超</p>
+    
+    <div class="site-description right-motion">
+      
+      
+      
+        <p>南京大学</p>
+      
+        <p>政府管理学院</p>
+      
+      
+    </div>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">4</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-name language" data-lan="category">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://liuwench.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
+
+
+
+  <div style="width: 100%; position: relative;">
+    <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+    <script src="/media/js/magic/clock.js"></script>
+  </div>
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'pisces';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box pisces">
+          <section class="section bg-color posts-expand slide-down-in">
+            
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://liuwench.github.io/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/">
+      小韩总的《台湾游记》
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span>2020-06-05</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>10<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>2782<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn language" data-lan="read-more" href="https://liuwench.github.io/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+        <footer class="post-footer">
+          <div class="post-eof"></div>
+        </footer>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://liuwench.github.io/ru-he-yong-zotero-zhua-qu-zhong-wen-tu-shu/">
+      如何用zotero抓取中文图书？
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span>2020-05-10</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>2<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>499<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn language" data-lan="read-more" href="https://liuwench.github.io/ru-he-yong-zotero-zhua-qu-zhong-wen-tu-shu/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+        <footer class="post-footer">
+          <div class="post-eof"></div>
+        </footer>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://liuwench.github.io/lesslesszhong-guo-she-hui-ke-xue-greatergreater-zi-ding-yi-wen-xian-ge-shi-csl/">
+      《中国社会科学》自定义文献格式CSL
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span>2020-05-01</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>2<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>567<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn language" data-lan="read-more" href="https://liuwench.github.io/lesslesszhong-guo-she-hui-ke-xue-greatergreater-zi-ding-yi-wen-xian-ge-shi-csl/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+        <footer class="post-footer">
+          <div class="post-eof"></div>
+        </footer>
+      
+    </div>
+  </article>
+
+  <article class="post-list-box  post box-shadow-wrapper">
+    <div class="article-wrapper bg-color">
+      <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://liuwench.github.io/xin-nian-kuai-le/">
+      新年快乐！
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span>2020-01-01</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>0<span class="language" data-lan="minute">分钟</span></span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>0<span class="pc-show language" data-lan="words">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+      <div class="post-body">
+        
+        
+          
+        
+        
+        <div class="post-button text-center">
+          <a class="btn language" data-lan="read-more" href="https://liuwench.github.io/xin-nian-kuai-le/" rel="contents">
+            阅读全文 »
+          </a>
+        </div>
+        
+      </div>
+      
+        <footer class="post-footer">
+          <div class="post-eof"></div>
+        </footer>
+      
+    </div>
+  </article>
+  
+            
+            
+<div class="page bg-color">
+  <ul class="pagination-ul">
+    
+    
+      
+        <li class="pagination-li pagination-active">
+            <a href="/page/../">
+              1
+            </a>
+        </li>
+      
+    
+    
+  </ul>
+</div>
+          </section>
         </div>
       </div>
     </div>
-
-    <script src="https://liuwench.github.io/media/prism.js"></script>  
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a
+        href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      
+    </div>
+  </footer>
+  
+  
+  <div class="pisces back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+</div>
 <script>
 
-Prism.highlightAll()
-let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+    back2TopText = document.querySelector('#back_to_top_text'),
+    drawerBox = document.querySelector('#drawer_box'),
+    rightSideBar = document.querySelector('.sidebar'),
+    viewport = document.querySelector('body');
 
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
+  function scrollAnimation(currentY, targetY) {
 
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach((link, index) => {
-    let section = document.getElementById(decodeURI(link.hash).substring(1));
-    let nextSection = null
-    if (mainNavLinks[index + 1]) {
-      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-    }
-    if (section.offsetTop <= fromTop) {
-      if (nextSection) {
-        if (nextSection.offsetTop > fromTop) {
-          link.classList.add("current");
-        } else {
-          link.classList.remove("current");    
-        }
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
       } else {
-        link.classList.add("current");
+        window.scrollTo(_currentY, targetY)
       }
-    } else {
-      link.classList.remove("current");
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener('scroll', function (e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
     }
   });
-});
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
-
-  if ("IntersectionObserver" in window) {
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target
-          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
-          lazyImage.classList.remove("lazy")
-          lazyImageObserver.unobserve(lazyImage)
-        }
-      });
-    });
-
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage)
-    })
-  } else {
-    // Possibly fall back to a more compatible method here
+  let hasCacu = false;
+  window.onresize = function () {
+    calcuHeight();
   }
-});
 
-const menuContainer = document.querySelector('.menu-container')
-const menus = document.querySelectorAll('.menu-container .menu')
-const mask = document.querySelector('.mask')
-const contentWrapper = document.querySelector('.content-wrapper')
-const latestArticle = document.querySelector('.latest-article')
-const readMore = document.querySelector('.read-more')
-const indexPage = document.querySelector('.index-page')
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
 
-const isHome = location.pathname === '/'
-if (latestArticle) {
-  latestArticle.style.display = isHome ? 'block' : 'none'
-  readMore.style.display = isHome ? 'block' : 'none'
-  indexPage.style.display = isHome ? 'none' : 'block'
-}
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
 
-const openMenu = () => {
-  menuContainer.classList.add('open')
-  menus.forEach(menu => {
-    menu.classList.add('animated', 'fadeInLeft')
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, transitionDir, {});
+          }
+        })
+        window.Velocity(viewport, openProp, {
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target", "_blank");
+      }
+    })
+  }
+
+  let faSearch = document.querySelector('#fa_search');
+  faSearch.addEventListener('click', function () {
+    document.querySelector('#search_mask').style = ''
   })
-  mask.classList.add('open')
-  contentWrapper.classList.add('is-second')
-}
 
-const closeMenu = () => {
-  menuContainer.classList.remove('open')
-  menus.forEach(menu => {
-    menu.classList.remove('animated', 'fadeInLeft')
-  })
-  mask.classList.remove('open')
-  contentWrapper.classList.remove('is-second')
-}
-</script>
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
   
-  </body>
+  // 离开当前页title变化
+  var leaveTitle = "";
+  if (leaveTitle) {
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState == 'hidden') {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+
+</script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px;cborder-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
+</script>
+  </div>
+</body>
+
+  <div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liuwench.github.io/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/"" data-c="
+          &lt;p&gt;说是游记，只不过是一个普遍的叫法罢了。细究还得叫“台湾游学记”。&lt;/p&gt;
+&lt;p&gt;2019年9月，我跟刘踏上了飞往台湾的飞机。一落地，最先记忆深刻的是马路上横线前端排排坐的机车和带着机车头盔的人们，整整齐齐。还有学弟提醒快到时间的人行绿灯变成跑步的步伐，学弟说很可爱。&lt;/p&gt;
+&lt;p&gt;我跟刘有一个共同的爱好，或者说因为他喜欢，所以我也喜欢了，那就是逛书店。我们两个几乎逛遍了台北最有名的二手书店，以及有名的诚品书店。在台湾大学和政治大学周边，所有的书店几乎都被我们两个走过。我们在不同的学校，却约定在没课的每一天都要见面，轮流到对方的学校图书馆，上自习。自习的每天下午，刘都会有出去放放风抽根烟的小憩时间。我也会陪他一起，走到校门口外面的垃圾桶旁边，跟他聊上一支烟的时间。台湾关于吸烟区有明确的规定，所以刘不敢随便乱抽烟，因此他在台湾烟瘾小了不少，回来因为疫情的关系直接就把烟戒掉了。&lt;/p&gt;
+&lt;p&gt;跑题了，说回书店。政大周边比较荒凉，没有太多书店。但是校内有一个专业性非常强的巨流书店。刘每次来我的学校，吃完晚饭总会进去淘淘书。台湾的统计学和写作教学非常发达，这些恰恰合了刘的口味。我会看一些政治哲学的书，大概翻一下，还有一些文学书籍。但是我们很少在这里买书，因为台湾的书都很贵，相比大陆那是贵了不少，我们两个穷学生买书还是要克制一点。&lt;/p&gt;
+&lt;p&gt;刘在台湾买了好多书，期末的时候又在我政大图书馆“顺”了几摞书。好了不黑他，解释一下，政大图书馆在期末的时候整理了很多旧书老书，放在门口，供学生自行挑选。刘来的时候正好碰上这一天。他看见图书馆门口满满的几推车书，两眼放光，激动的手都有些发抖，因为他找到了非常符合他口味的专业书籍，哈哈哈哈，而且多是绝版书，有些版本十分具有纪念意义。&lt;/p&gt;
+&lt;p&gt;说完我的学校，再来说说刘的学校。台大是台湾的第一学府。这个第一不仅体现在软实力上，硬件上也让人无话可说。台大学校面积很大，图书馆非常豪华，我们所在学院的图书馆既现代又温柔，唯一的缺点就是期中期末人太多，找不着座位。总图书馆更不用说了，日治时期的建筑风格，里面设施非常舒适。讲到这又突然想起来政大的新图书馆。它建在校外，在我学期快要结束的时候才刚刚开放，因此我只体验了大概一个多月的时间就离开了。新图书馆的名字我要想一想，嗷，叫达贤图书馆，它的面积和里面的基础设施的豪华程度，我觉得远远超过了台湾大学任何一个图书馆，在这里有我第一次体验VR攀岩游戏的经历；还有我第一次见到正在工作中的3D打印机的经历。我在快要离开台湾的时候，特地拍了介绍达贤图书馆的视频，想要剪辑出来，但是因为我懒，经常行动跟不上想法，素材一直到现在还在我手机里存放着。等我一定把它剪辑出来放到视频网站上。到时候再把链接放给大家。&lt;/p&gt;
+&lt;p&gt;又跑题了。我们继续说台大附近的二手书店。网络上出名的我们都去过，茉莉二手书店、唐山书店、雅博客书店，胡思书店我们去晚了，已经不营业了。我们两个还带着北大的金老师一起逛书店，金老师收获颇丰。是不是政治学者都很喜欢买书。我自己最喜欢的书店必须要数雅博客书店，他是一个二手书店，也是一个音像店，里面有很多CD。在《想见你》火起来的时候，我让刘帮我去买一碟伍佰的《Last dance》，很可惜售罄了，但是也是意料之中。我非常喜欢雅博客的味道，是那种老旧木头经历了很多年，吸收了空气中的水分散发出来的味道，以及夹杂着旧的书籍的味道，有一种木香伴随着空气中的潮湿和旧的纸张的味道。我也很喜欢他的灯光，不像茉莉书店那么明亮，有一些昏暗，有一些氤氲。&lt;/p&gt;
+&lt;p&gt;讲到这里被刘一个电话打断了。我的思绪也有些接不上了。我仔细回忆一下，我们继续。&lt;/p&gt;
+&lt;p&gt;除了书店，我们的爱好就是听讲座。说出来可能大家觉得很奇特。我自己也不知道为什么。政大在这一点上使我必须要用我此生最奢华的夸赞去写他。因为我在政大这半年的时间里，听的讲座远比上的课程多的多的多。我一周只有一堂课，上三个小时。但是每周每天我几乎都有讲座去听。政大学生有一个必备app，叫“行动政大”，在这里有一个专门的讲座模块，包含了全校95%以上的讲座信息。我每天都会在这里查看讲座信息，参加的最多的就是民族系、国际关系、社会学系的讲座，大佬云集，还可以练习英语听力，是我的大型追星现场没错了。除此之外，政大的讲座80%都会有会议餐提供。我愣是因为天天吃豪华会议餐盒长胖了6斤。不过我还是要评价一下我吃过的会议餐盒，最喜欢的就是寿司了哈哈哈，我觉得台湾的寿司好好吃哦（台湾腔）。我会看好讲座信息，拉着刘跟我一起听讲座，后来就变成了刘是为了讲座内容来找我，而我为了会议餐去参加讲座。&lt;/p&gt;
+&lt;p&gt;那再说些好玩的事情吧，吃喝玩乐的事情。我们在台湾没有进行很多人认为必须要做的事情：环岛。因为我们大部分的时间都是在图书馆里。&lt;/p&gt;
+&lt;p&gt;本来我们应该有更少的时间在台北吃喝逛街。但是，台湾的大学很独特，周末会休息，甚至“强制”你休息。因为图书馆会在周六日选择性闭馆。尤其是周日，几乎全校的各个图书馆都闭馆了。更重要的是，学校里面、学校周边的小饭店也会休息，我们经常吃的那几家店，都会在周六或者周日休息，导致我们根本没有地方上自习更没有地方吃饭。所以，经历了这样几个周末之后，我们两个达成一致，周末的时候会去逛街，逛夜市，逛寺庙，等等。大家都知道台北商圈是很好逛的，更因为夜市而出名。我们打卡了几个台大附近的夜市，已经感觉很满足了。我还在台北过了个生日。也是因为我的生日，我决定离开台北，去看看台湾其他的地方。最后我们还是选择了离台北大概一个小时大巴车程的宜兰礁溪，去泡温泉。哈哈哈哈哈哈。&lt;/p&gt;
+&lt;p&gt;说到玩，我又想起我跟刘在淡水。淡水可以说是我认为台北最美的地方。在那里刘给我拍了很多照片。最美的夕阳也是在淡水见到的，在台北的唯一一次坐船也是在淡水实现的。淡水当然还是充满杰伦气息的地方，那里有他的中学母校，还是他的MV取景地（《不能说的秘密》）。我也打卡了杰伦中学经常吃的小饭店，点了“杰伦套餐”，吃了“阿给”。现在想起淡水都很幸福，那是一个很美很美的地方。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://liuwench.github.io/post-images/1591361326976.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;除了淡水的美，我必须还要再提一处美景。那就是台北101附近的象山。爬象山是金老师的提议，我跟刘作陪。到了傍晚，爬到象山顶，一大群人在平台上等待日落，等待101以及它附近的高楼大厦瞬间灯火通明的样子。那天金老师穿了一身白色西装套装，整个人非常精神。&lt;/p&gt;
+&lt;p&gt;打开了美景话匣子，突然收不住了。那就再聊聊吧。我住的地方从阳台上看过去，晚上也是豪华夜景。政大的交换生、国际生宿舍都在山上，我住在陈绮贞曾经住过的自强舍区。从阳台上即可看见台北101，那里是台北最高的建筑。我入住第一天，就被这美丽的夜景吸引了。元旦节跨年的时候，可能很多人都知道台北101有烟花秀。我跟刘没能去101下面跟着人群倒数三二一，反而是我在宿舍跟室友一起在阳台上看了几分钟的豪华烟花秀，最后因为风太大我俩放弃继续守候哈哈哈哈哈哈。&lt;/p&gt;
+&lt;p&gt;最后一个美景，要说台大附近的水岸广场。台湾的气候大多数时间都让人觉得非常舒服，不冷，也不热。依旧是下午傍晚时分，我跟刘从他的宿舍走到附近的水岸广场，绿树绿草，水流人群。之所以叫水岸广场，是因为那里真的有一条河流，沿着河流是很多操场步道。有很多人骑着像大陆的共享单车一样的自行车（我忘记了那个在台湾叫什么），在步道上很自由的骑行。我跟刘也用悠游卡刷出两辆自行车，伴随着傍晚的微风，和未落山的夕阳，很自由地骑行。现在回忆起来，当时那舒服的微风拂过的感觉依旧让我心旷神怡。&lt;/p&gt;
+&lt;p&gt;好了，今天就聊到这里吧。如果有其他的灵感涌上心头我会继续写下去的。但是以上，都是让我很舒服的情跟景，让我爱上台湾的情跟景。另外还有很多其他，例如美食、人文细节，我可能会另开一篇，记录下来。暂时就这样吧，拜拜。&lt;/p&gt;
+&lt;p&gt;作者围脖：sss_大大BigBig&lt;/p&gt;
+">小韩总的《台湾游记》</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liuwench.github.io/ru-he-yong-zotero-zhua-qu-zhong-wen-tu-shu/"" data-c="
+          &lt;p&gt;zotero抓取中文期刊可以通过cnki，而且可以得到非常好的体验感，但是zotero抓取中文图书的效果总是不尽如人意。那么，如何更好地用zotero抓取中文图书呢？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我们先比较一下几种可能的方法，并用《中国社会科学》引文格式呈现：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;读秀抓取（另外的几个马甲就不试啦，如全国图书馆参考咨询联盟）&lt;br&gt;
+严洁：《缺失数据的多重插补  应用案例与软件操作》，重庆：重庆大学出版社，2017年。&lt;br&gt;
+读秀没有检索到《缺失数据》这一译本&lt;/li&gt;
+&lt;li&gt;豆瓣抓取&lt;br&gt;
+严洁：《缺失数据的多重插补》，重庆大学出版社，2017年。&lt;br&gt;
+保罗·D.阿利森：《缺失数据》，林毓玲译，格致出版社，2012年。&lt;br&gt;
+&lt;strong&gt;3. 利用ISBN号抓取&lt;/strong&gt;&lt;br&gt;
+严洁：《缺失数据的多重插补: 应用案例与软件操作》，重庆：重庆大学出版社，2017年。&lt;br&gt;
+阿利森、林毓玲：《缺失数据》，上海：上海格致出版社 : 上海人民出版社，2012年。（原始版）&lt;br&gt;
+保罗·阿利森：《缺失数据》，林毓玲译，上海：上海格致出版社 : 上海人民出版社，2012年。（修改后）&lt;/li&gt;
+&lt;li&gt;从学校图书馆检索系统抓取&lt;br&gt;
+从使用经历上看，这是非常差的一种方式。一个是学校的检索系统做的不好，另外一个原因是每个学校的检索系统又不同。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;稍微总结一下，我们抓取了两种类型的中文图书，第一本是原著，第二本是译著，总体上看，读秀和豆瓣的抓取都是不尽如人意的。虽然ISBN不是最完美的方法，仍然存在一些瑕疵，如例子中将译者抓为著者，著者名字不全，但是相对而言，ISBN的抓取结果是最全的，对于瑕疵问题可以在zotero中手动修改即可。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;ISBN的抓取源是worldcat网站&lt;/p&gt;
+">如何用zotero抓取中文图书？</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liuwench.github.io/lesslesszhong-guo-she-hui-ke-xue-greatergreater-zi-ding-yi-wen-xian-ge-shi-csl/"" data-c="
+          &lt;p&gt;因为学位论文引用文献要求参照《中国社会科学》杂志的”引文注释规范“，所以从网上检索了一下有没有相关的资源。主要有以下资源：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/58516953&#34;&gt;方凡反饭制作的《历史研究》《中国社会科学》的CSL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/111316221&#34;&gt;Free粥对上面进行了修改，制作了《世界经济与政治》的CSL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;附上&lt;br&gt;
+&lt;a href=&#34;http://blog.pulipuli.info/2014/08/zoteroapa-zotero-citation-style-apa.html&#34;&gt;布丁布丁吃什么制作的中英文APA&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.cssn.cn/qt/wytg/wytg_zgshkx/201312/W020131223519233751610.doc&#34;&gt;《&amp;lt;中国社会科学&amp;gt;关于引文注释的规定》&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在使用过程中，总结了几点注意事项：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一定要将zotero中的英文文献的语言修改为en-US（参考布丁布丁吃什么那篇），否则英文文献仍然会当成中文文献。&lt;strong&gt;这是最重要的一条注意事项&lt;/strong&gt;&lt;br&gt;
+&lt;img src=&#34;https://liuwench.github.io/post-images/1588325352676.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;li&gt;在其他人的使用过程中又发现一条决定性的设置，即在word中设置引文样式时，语言一定要选择“中文（中国大陆）”。&lt;strong&gt;这也是非常重要的一条注意事项&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;虽然我对英文文献进行了首字母大写的设置，但是英文标题好像没有效果。针对这一问题，可以在zotero中设置，选中文献，在信息中选中标题，右键选择“标题大写”。&lt;/li&gt;
+&lt;li&gt;英文作者直接仍然是以、连结，我不知道怎么修改，《中国社会科学》的引文规范是and连结，所以就最后在word中手动修改吧。&lt;/li&gt;
+&lt;li&gt;一般zotero抓取不到英文文献的月份和出版地，自己在zotero中补上就行了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;. &lt;center&gt;&lt;strong&gt;不是迫不得已，当然用方便的APA啦！&lt;/strong&gt;&lt;/center&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我在使用过程中对方凡反饭制作的CSL做了小修补，好像也不怎么重要，我没有侵犯人家工作的意思，只是在使用过程中为了自己的使用方便。可以看到各种背景信息都是没有改的。向上面两位朋友表达感谢！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://editor.citationstyles.org/about/&#34;&gt;修改CSL的可视化网站&lt;/a&gt;&lt;br&gt;
+现在的CSL肯定还有很多问题，各位有缘看到的朋友自行修改吧。&lt;/p&gt;
+&lt;p&gt;我现在所使用的版本 &lt;strong&gt;（仍然是方凡反饭的CSL，再次感谢！）&lt;/strong&gt;&lt;br&gt;
+链接: https://pan.baidu.com/s/14r4f-Wa8NLlMk0fSfGaQXQ 提取码: zuue&lt;/p&gt;
+">《中国社会科学》自定义文献格式CSL</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liuwench.github.io/xue-zhu-lu-li/"" data-c="
+          &lt;h2 id=&#34;个人简介&#34;&gt;个人简介&lt;/h2&gt;
+&lt;p&gt;刘文超，男，河北三河人，生于1995年6月。&lt;/p&gt;
+&lt;h2 id=&#34;教育经历&#34;&gt;教育经历&lt;/h2&gt;
+&lt;p&gt;2018.09至今        南京大学        政治学理论专业&lt;br&gt;
+2019.09-2020.01 台湾大学        政治学系交换&lt;br&gt;
+2014.09-2018.06 天津师范大学 政治学博雅班法学学士学位&lt;/p&gt;
+&lt;h2 id=&#34;研究兴趣&#34;&gt;研究兴趣&lt;/h2&gt;
+&lt;p&gt;基于大数据的文本勘探与社会网络分析（侧重描述与预测）&lt;br&gt;
+基于调查数据的因果推断（侧重于解释）&lt;br&gt;
+政治文化的经验研究&lt;br&gt;
+城乡基层治理&lt;/p&gt;
+&lt;h2 id=&#34;研究技能&#34;&gt;研究技能&lt;/h2&gt;
+&lt;p&gt;定量方法：多元线性回归、类别变量分析、社会网络分析、文本勘探、内容分析、因果推断&lt;br&gt;
+定性方法：访谈、参与式观察、案例研究、Nvivo软件&lt;br&gt;
+统计分析：SPSS、STATA、R&lt;br&gt;
+文献管理：Histcite、CiteSpace、Endnote、Zotero&lt;br&gt;
+论文排版：Latex&lt;/p&gt;
+&lt;h2 id=&#34;联系方式&#34;&gt;联系方式&lt;/h2&gt;
+&lt;p&gt;通讯地址：210023 南京市仙林大道163号  南京大学政府管理学院&lt;br&gt;
+邮箱：wenchao0609@gmail.com&lt;/p&gt;
+">学术履历</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liuwench.github.io/xin-nian-kuai-le/"" data-c="
+          &lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://liuwench.github.io/post-images/1577809609182.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+">新年快乐！</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://liuwench.github.io/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;p&gt;独学而无友，则孤陋而寡闻。&lt;/p&gt;
+&lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
+&lt;p&gt;刘文超&lt;br&gt;
+南京大学政治学理论&lt;/p&gt;
+&lt;h2 id=&#34;研究兴趣&#34;&gt;⛹ 研究兴趣&lt;/h2&gt;
+&lt;p&gt;基于大数据的文本勘探与社会网络分析（侧重描述与预测）&lt;br&gt;
+基于调查数据的因果推断（侧重于解释）&lt;br&gt;
+政治文化的经验研究&lt;br&gt;
+城乡基层治理&lt;/p&gt;
+&lt;h2 id=&#34;联系方式&#34;&gt;📬 联系方式&lt;/h2&gt;
+&lt;p&gt;wenchao0609@gmail.com&lt;/p&gt;
+">关于</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 200
+  });
+</script>
+
+
+<script src="/media/js/mouse/love.js"></script>
+
+
+
 </html>
