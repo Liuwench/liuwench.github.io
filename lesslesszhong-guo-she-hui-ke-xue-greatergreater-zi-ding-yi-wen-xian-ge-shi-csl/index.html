@@ -9,7 +9,7 @@
 <meta name="description" content="This is LiuWenchao&#39;s blog.">
 <meta name="theme-color" content="#000">
 <title>《中国社会科学》自定义文献格式CSL | LiuWenchao</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1593077279157">
+<link rel="shortcut icon" href="/favicon.ico?v=1593078803004">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -65,7 +65,7 @@
           
         </div>
         
-          <p class="subtitle">精于心，简于形</p>
+          <p class="subtitle">This is LiuWenchao&#39;s blog.</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -233,7 +233,7 @@
         
           
             <a class="social-img" href="#">
-              <img src="\media\images\custom-array-imgSocials-1593077278438-socialImg.jpg" />
+              <img src="\media\images\custom-array-imgSocials-1593078802236-socialImg.jpg" />
               <i class="fa fa-wechat" title="微信" ></i>
             </a>
           
@@ -242,6 +242,10 @@
     </div>
   
 
+
+  <div class="sidebar-item">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=200 height=86 src="//music.163.com/outchain/player?type=2&id=29732992&auto=1&height=66"></iframe>
+  </div>
 
 
 </div>
@@ -1025,45 +1029,6 @@
   
   
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <div class="aplayer" id="aplayer"></div>
-  <script>
-  let musics = JSON.parse('[]');
-  let mediaMusic = [];
-  for (let i = 0; i < musics.length; i++) {
-    let item = musics[i];
-    mediaMusic.push({
-      name: item.musicName,
-      artist: item.author,
-      url: item.musicLink,
-      lrc: item.lrc,
-      cover: item.cover
-    });
-  }
-
-  const ap = new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      lrcType: 3,
-      listFolded: false,
-      listMaxHeight: 90,
-      audio: mediaMusic
-  });
-  window.addEventListener('load', function() {
-    let postBody = document.querySelector('#post_body');
-    let hs = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
-    postBody && hs.forEach(h => {
-      let helems = postBody.querySelectorAll(h);
-      if (helems.length > 0) {
-        helems.forEach(elem => {
-          elem.id = encodeURI(elem.id);
-        })
-      }
-    })
-  })
-  </script>
-
 
   
 </div>
@@ -1882,6 +1847,13 @@
 
 </script>
 <script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 200
+  });
+</script>
 
 
 <script src="/media/js/mouse/love.js"></script>
