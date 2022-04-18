@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liuwench.github.io</id>
     <title>LiuWenchao</title>
-    <updated>2021-05-09T15:53:10.256Z</updated>
+    <updated>2022-04-18T13:19:17.526Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liuwench.github.io"/>
     <link rel="self" href="https://liuwench.github.io/atom.xml"/>
     <subtitle>Wenchao Liu -  Ph.D. Student at Nanjing University</subtitle>
     <logo>https://liuwench.github.io/images/avatar.png</logo>
     <icon>https://liuwench.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, LiuWenchao</rights>
+    <rights>All rights reserved 2022, LiuWenchao</rights>
     <entry>
         <title type="html"><![CDATA[小韩总的《台湾游记》]]></title>
         <id>https://liuwench.github.io/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/</id>
