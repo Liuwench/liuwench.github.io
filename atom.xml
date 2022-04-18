@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liuwench.github.io</id>
     <title>LiuWenchao</title>
-    <updated>2022-04-18T13:26:37.234Z</updated>
+    <updated>2022-04-18T13:46:49.987Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liuwench.github.io"/>
     <link rel="self" href="https://liuwench.github.io/atom.xml"/>
@@ -10,13 +10,6 @@
     <logo>https://liuwench.github.io/images/avatar.png</logo>
     <icon>https://liuwench.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, LiuWenchao</rights>
-    <entry>
-        <title type="html"><![CDATA[小韩总的《台湾游记》]]></title>
-        <id>https://liuwench.github.io/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/</id>
-        <link href="https://liuwench.github.io/xiao-han-zong-de-lesslesstai-wan-you-ji-greatergreater/">
-        </link>
-        <updated>2020-06-05T12:08:03.000Z</updated>
-    </entry>
     <entry>
         <title type="html"><![CDATA[如何用zotero抓取中文图书？]]></title>
         <id>https://liuwench.github.io/ru-he-yong-zotero-zhua-qu-zhong-wen-tu-shu/</id>
